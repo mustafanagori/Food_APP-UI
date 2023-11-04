@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:profile/controller/navigation_controller.dart';
 import 'package:profile/view/deals.dart';
 import 'package:profile/view/home.dart';
 import 'package:profile/view/order.dart';
-
-import '../../Controller/customer_navigation_controller.dart';
 
 class MyNavigation extends StatefulWidget {
   MyNavigation({super.key});
@@ -50,13 +49,13 @@ class _MyNavigationState extends State<MyNavigation> {
                 backgroundColor: Colors.white,
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.badge),
-                label: "Order",
+                icon: Icon(Icons.favorite),
+                label: "Favorite",
                 backgroundColor: Colors.white,
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.offline_share),
-                label: "Deals",
+                icon: Icon(Icons.shopping_bag),
+                label: "Order",
                 backgroundColor: Colors.white,
               ),
             ]),

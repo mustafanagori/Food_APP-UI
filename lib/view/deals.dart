@@ -10,9 +10,8 @@ class Deals extends StatelessWidget {
       appBar: PreferredSize(
           preferredSize: Size.fromHeight(56.0),
           child: CustomAppBar(
-            text: "Deals",
+            text: "Order Details",
           )),
     );
-    ;
   }
 }

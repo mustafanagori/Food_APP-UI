@@ -152,12 +152,12 @@ class Tile extends StatelessWidget {
     return ListTile(
       title: Text(
         text,
-        style: TextStyle(color: Colors.black45),
+        style: const TextStyle(color: Colors.black45),
       ),
       leading: Icon(
         icon1,
         size: 22,
-        color: Colors.black45,
+        color: Colors.orange.shade300,
       ),
       trailing: Icon(
         icon2,

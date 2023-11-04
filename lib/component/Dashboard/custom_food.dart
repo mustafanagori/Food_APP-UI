@@ -8,11 +8,11 @@ class CustomFood extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var w = MediaQuery.of(context).size.width;
-    return SingleChildScrollView(
+    return const SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(
         children: [
-          const FoodCategoery(
+          FoodCategoery(
             assetPath: "assets/image/category/pizza.png",
             txt: "Burger",
           ),
