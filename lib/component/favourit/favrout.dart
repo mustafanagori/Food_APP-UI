@@ -69,12 +69,17 @@ class FavoriteCard extends StatelessWidget {
                       children: [
                         Row(
                           children: [
-                            Text(rating.toString()),
                             const Icon(
                               Icons.star,
-                              color: Colors.yellow,
+                              color: Color.fromARGB(255, 244, 221, 22),
                               size: 20,
-                            )
+                            ),
+                            Text(
+                              rating.toString(),
+                              style: const TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black54),
+                            ),
                           ],
                         ),
                         SizedBox(
@@ -88,17 +93,33 @@ class FavoriteCard extends StatelessWidget {
             ],
           ),
           Positioned(
-            left: 25,
-            bottom: -65,
+            left: w * 0.07,
+            top: h * -0.07,
             child: ClipRRect(
               borderRadius: BorderRadius.circular(10),
               child: Image(
                 height: h * 0.3,
-                width: w * 0.3,
+                width: w * 0.28,
                 image: AssetImage(path),
               ),
             ),
           ),
+          // Positioned(
+          //   left: w * 0.09,
+          //   bottom: h * 0.02,
+          //   child: Container(
+          //     decoration:
+          //         BoxDecoration(borderRadius: BorderRadius.circular(20)),
+          //     height: h * 0.1,
+          //     width: w * 0.25,
+          //     child: Image(
+          //       // height: h * 0.1,
+          //       //width: w * 0.3,
+          //       fit: BoxFit.fill,
+          //       image: AssetImage(path),
+          //     ),
+          //   ),
+          // ),
         ],
       ),
     );

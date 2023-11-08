@@ -17,25 +17,23 @@ class SearchField extends StatelessWidget {
           child: TextField(
             cursorColor: Colors.orange.shade300,
             decoration: InputDecoration(
+              hintText: "Serach",
+              hintStyle: const TextStyle(color: Colors.black45),
               border: InputBorder.none,
-              prefixIcon: Icon(
+              prefixIcon: const Icon(
                 Icons.search,
                 color: Colors.black45,
               ),
-              // border: OutlineInputBorder(
-              //   borderRadius: BorderRadius.circular(10.0),
-              //   borderSide: BorderSide(color: Colors.orange.shade400),
-              // ),
               contentPadding: EdgeInsets.only(bottom: h * 0.0015),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10.0),
-                borderSide: BorderSide(
+                borderSide: const BorderSide(
                   color: Colors.black45,
                 ),
               ),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10.0),
-                borderSide: BorderSide(
+                borderSide: const BorderSide(
                   color: Colors.black45,
                 ),
               ),

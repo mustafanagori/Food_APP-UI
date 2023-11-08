@@ -37,18 +37,21 @@ class _HomeState extends State<Home> {
               CustomSizeBox(height: 0.020),
               const CustomText(
                 txt: "Deals & Discount",
+                color: Colors.black54,
               ),
               CustomSizeBox(height: 0.020),
               CustomSlider(),
               CustomSizeBox(height: 0.020),
               const CustomText(
                 txt: "Food Category",
+                color: Colors.black54,
               ),
               CustomSizeBox(height: 0.020),
               const CustomFood(),
               CustomSizeBox(height: 0.020),
               const CustomText(
                 txt: "Special Food",
+                color: Colors.black54,
               ),
               CustomSizeBox(height: 0.020),
               const CategoryRow(),

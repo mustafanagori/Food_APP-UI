@@ -1,7 +1,7 @@
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
-import 'package:profile/component/Dashboard/favourit/favrout.dart';
+import 'package:profile/component/favourit/favrout.dart';
 import 'package:profile/component/other/custum_appbar.dart';
 
 class Order extends StatelessWidget {
